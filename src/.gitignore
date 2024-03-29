@@ -1,0 +1,36 @@
+# Binários e arquivos compilados
+bin/
+obj/
+CoverageReport/
+coverage/
+
+# Arquivos temporários
+*.DS_Store
+*.swp
+*~
+
+# Pacotes NuGet
+*.nuget.props
+*.paket.props
+*.paket.targets
+packages/
+*.nupkg
+*.paket.lock
+*.dll
+*.exe
+*.pdb
+
+# Cache de dependências do .NET
+.project.assets.json
+*/.vscode/
+.vs/
+
+# Logs
+*.log
+
+# Ferramentas e dependências do Visual Studio
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
