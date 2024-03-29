@@ -16,13 +16,13 @@ jobs:
         dotnet-version: 8.0.200
 
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore ./src/Codeizi
 
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build ./src/Codeizi --configuration Release --no-restore
 
     - name: Test
-      run: dotnet test --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+      run: dotnet test ./src/Codeizi --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1

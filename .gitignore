@@ -1,1 +1,24 @@
 .vs
+# Ignorar arquivos de compilação e arquivos temporários
+bin/
+obj/
+
+# Ignorar arquivos de dependências NuGet
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.exe.config
+*.json
+*.nupkg
+*.log
+*.user
+
+# Ignorar arquivos gerados automaticamente
+_*
+
+# Ignorar arquivos de build e logs
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+logs/
