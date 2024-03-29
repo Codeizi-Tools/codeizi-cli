@@ -9,22 +9,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD1D337A-766
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B0ED9034-090C-4C79-BB08-ECB2CC45E113}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.CLI.Test", "Codeizi.CLI.Test\Codeizi.CLI.Test.csproj", "{EBB9BB98-90C7-43F5-A750-7B455F9093EC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.DI", "Codeizi.DI\Codeizi.DI.csproj", "{9E08594F-F125-4AC6-BE2E-C75F5FF61543}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Service", "Codeizi.Service\Codeizi.Service.csproj", "{26DBD578-8AB2-4E49-A625-C7BDBC3B8576}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Service.Test", "Codeizi.Service.Test\Codeizi.Service.Test.csproj", "{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8906C233-A119-4D40-B5CA-14693CDDEEFD}"
 	ProjectSection(SolutionItems) = preProject
 		exec-cover-test.bat = exec-cover-test.bat
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.ProcessExecution", "Codeizi.ProcessExecution\Codeizi.ProcessExecution.csproj", "{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.ProcessExecution", "Codeizi.ProcessExecution\Codeizi.ProcessExecution.csproj", "{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.ConsoleManager", "Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj", "{38479AC9-E490-461C-9A11-3FCA47457DEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.ConsoleManager", "Codeizi.ConsoleManager\Codeizi.ConsoleManager.csproj", "{38479AC9-E490-461C-9A11-3FCA47457DEF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.CLI.Test", "..\..\test\Codeizi.CLI.Test\Codeizi.CLI.Test.csproj", "{59237921-6E20-42D2-8749-EA2F59B0F60C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Service.Test", "..\..\test\Codeizi.Service.Test\Codeizi.Service.Test.csproj", "{F81C8636-FE8A-4796-A403-659DD1DAC169}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,10 +36,6 @@ Global
 		{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBB9BB98-90C7-43F5-A750-7B455F9093EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBB9BB98-90C7-43F5-A750-7B455F9093EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBB9BB98-90C7-43F5-A750-7B455F9093EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBB9BB98-90C7-43F5-A750-7B455F9093EC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E08594F-F125-4AC6-BE2E-C75F5FF61543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E08594F-F125-4AC6-BE2E-C75F5FF61543}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E08594F-F125-4AC6-BE2E-C75F5FF61543}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,10 +44,6 @@ Global
 		{26DBD578-8AB2-4E49-A625-C7BDBC3B8576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DBD578-8AB2-4E49-A625-C7BDBC3B8576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DBD578-8AB2-4E49-A625-C7BDBC3B8576}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -60,18 +52,26 @@ Global
 		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38479AC9-E490-461C-9A11-3FCA47457DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59237921-6E20-42D2-8749-EA2F59B0F60C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59237921-6E20-42D2-8749-EA2F59B0F60C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59237921-6E20-42D2-8749-EA2F59B0F60C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59237921-6E20-42D2-8749-EA2F59B0F60C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EF9BFDD1-EF9F-43E6-9AA6-0F6835D25B64} = {BD1D337A-7668-4850-923C-DADC75112BFD}
-		{EBB9BB98-90C7-43F5-A750-7B455F9093EC} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 		{9E08594F-F125-4AC6-BE2E-C75F5FF61543} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 		{26DBD578-8AB2-4E49-A625-C7BDBC3B8576} = {BD1D337A-7668-4850-923C-DADC75112BFD}
-		{D756587D-7B9B-44AD-B192-6AAA69EF6D7C} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 		{50BDEE22-2A21-4363-A410-1D4B0C6BCE05} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 		{38479AC9-E490-461C-9A11-3FCA47457DEF} = {BD1D337A-7668-4850-923C-DADC75112BFD}
+		{59237921-6E20-42D2-8749-EA2F59B0F60C} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
+		{F81C8636-FE8A-4796-A403-659DD1DAC169} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6963E20A-C1DC-49F1-9EBA-79D18758B813}
