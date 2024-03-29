@@ -43,7 +43,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         shell: powershell
         run: |
-          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Codeizi-Tools_codeizi-cli" /o:"codeizi-tools" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
+          .\.sonar\scanner\dotnet-sonarscanner begin /k:"Codeizi-Tools_codeizi-cli" /o:"codeizi-tools" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"  /d:sonar.cs.opencover.reportsPaths="./coverage/*/*coverage.info"
           dotnet build ./src/Codeizi 
-          dotnet test ./src/Codeizi --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+          dotnet test ./src/Codeizi --collect:"XPlat Code Coverage;Format=lcov" --results-directory:"./coverage" 
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
