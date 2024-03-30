@@ -1,4 +1,6 @@
-﻿namespace Codeizi.Service.Commands
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Codeizi.Service.Commands
 {
     public record VersionCommand : BaseCommand
     {
@@ -7,6 +9,7 @@
         }
         public override IEnumerable<ParameterCommand> GetArgs(string[] args) => [];
 
+        [ExcludeFromCodeCoverage]
         public override string[] GetParameters() => [];
     }
 }

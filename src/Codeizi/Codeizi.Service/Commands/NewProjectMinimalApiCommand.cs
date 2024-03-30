@@ -1,4 +1,6 @@
-﻿namespace Codeizi.Service.Commands
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Codeizi.Service.Commands
 {
     public record NewProjectMinimalApiCommand : BaseCommand
     {
@@ -7,6 +9,7 @@
         public NewProjectMinimalApiCommand() : base("np-minimal-api", "npmapi") { }
         public const string SHORT_NAME = "-n";
         public const string LONG_NAME = "-name";
+        [ExcludeFromCodeCoverage]
         public override string[] GetParameters() => [SHORT_NAME];
         public override IEnumerable<ParameterCommand> GetArgs(string[] args)
         {
