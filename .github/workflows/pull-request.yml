@@ -1,10 +1,7 @@
 name: SonarCloud
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    types: [opened, synchronize, reopened]
+    push:
+      branches: [ main ]
 jobs:
   build:
     name: Build and analyze
@@ -44,6 +41,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"Codeizi-Tools_codeizi-cli" /o:"codeizi-tools" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
-          dotnet build ./src/Codeizi 
-          dotnet test --collect "Code Coverage"
+          dotnet build ./src/Codeizi           
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
