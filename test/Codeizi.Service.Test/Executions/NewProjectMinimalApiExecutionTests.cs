@@ -32,6 +32,29 @@ namespace Codeizi.Service.Test.Executions
         }
 
         [Fact]
+        public void Proccess_CreatesProjectSuccessfully_WithLongName()
+        {
+            // Arrange
+            var consoleMock = Substitute.For<ICodeiziConsoleManager>();
+            var processExecutionMock = Substitute.For<ICodeiziProcessExecution>();
+
+            var projectName = "MyProject";
+            var args = new List<ParameterCommand>
+            {
+                new(NewProjectMinimalApiCommand.LONG_NAME, projectName)
+            };
+
+            var execution = new NewProjectMinimalApiExecution(consoleMock, processExecutionMock);
+
+            // Act
+            execution.Proccess(args);
+
+            // Assert
+            processExecutionMock.Received(1).Execute("dotnet", $"new webapi -o {projectName}");
+            consoleMock.Received(1).WriteLine("Projeto criado com sucesso");
+        }
+
+        [Fact]
         public void Proccess_NoProjectName_ThrowsException()
         {
             // Arrange

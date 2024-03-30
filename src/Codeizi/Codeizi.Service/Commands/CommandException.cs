@@ -19,4 +19,9 @@
     {
         public static CommandException Throw(string command) => new($"The parameter for {command} not found");
     }
+
+    public static class InternalError
+    {
+        public static CommandException Throw() => new($"Internal error :(");
+    }
 }

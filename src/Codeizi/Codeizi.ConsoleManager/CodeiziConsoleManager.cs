@@ -1,7 +1,9 @@
 ﻿using Codeizi.ConsoleManager;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Codeizi
 {
+    [ExcludeFromCodeCoverage]
     public class CodeiziConsoleManager : ICodeiziConsoleManager
     {
         public void Color(ConsoleColor color)

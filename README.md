@@ -5,6 +5,8 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Codeizi-Tools_codeizi-cli&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Codeizi-Tools_codeizi-cli)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Codeizi-Tools_codeizi-cli&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Codeizi-Tools_codeizi-cli)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Codeizi-Tools_codeizi-cli&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Codeizi-Tools_codeizi-cli)
+![.NET](https://img.shields.io/badge/.NET-512BD4.svg?style=for-the-badge&logo=dotnet&logoColor=white)
+![OPENSOURCE](https://img.shields.io/badge/Open%20Source%20Initiative-3DA639.svg?style=for-the-badge&logo=Open-Source-Initiative&logoColor=white)
 
 ## Comandos
 

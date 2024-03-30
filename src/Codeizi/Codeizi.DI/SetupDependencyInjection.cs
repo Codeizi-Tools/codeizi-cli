@@ -23,7 +23,11 @@ namespace Codeizi.DI
             => _serviceCollection!.GetRequiredService<T>();
 
         public IExecutionCommand Get(Type type)
-            => (IExecutionCommand)_serviceCollection!.GetService(type);
-
+        {
+            var instance = _serviceCollection!.GetService(type);
+            return instance == null
+                ? throw new ArgumentException($"The type {type} not found in Service Provider")
+                : (IExecutionCommand)instance;
+        }
     }
 }

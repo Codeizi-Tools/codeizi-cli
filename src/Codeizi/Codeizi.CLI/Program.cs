@@ -1,25 +1,33 @@
-﻿using Codeizi.CLI;
-using Codeizi.DI;
+﻿using Codeizi.DI;
 using Codeizi.Service.Commands;
+using System.Diagnostics.CodeAnalysis;
 
-public class Program
+namespace Codeizi.CLI
 {
-    public static int Main(string[] args)
+    [ExcludeFromCodeCoverage]
+    public class Program
     {
-        try
+        protected Program() { }
+
+        public static int Main(string[] args)
         {
-            if (args.Length == 0)
-                args = ["-v"];
-            new CodeiziManager(new SetupDependencyInjection()).Start(args);
-            return (int)EnumCodeReturn.SUCCES_RETURN;
-        }
-        catch (CommandException)
-        {
-            return (int)EnumCodeReturn.COMMAND_NOT_FOUND;
-        }
-        catch (Exception)
-        {
-            return (int)EnumCodeReturn.INTERNAL_ERROR;
+            try
+            {
+                if (args.Length == 0)
+                    args = ["-v"];
+
+                new CodeiziManager(new SetupDependencyInjection()).Start(args);
+
+                return (int)EnumCodeReturn.SUCCES_RETURN;
+            }
+            catch (CommandException)
+            {
+                return (int)EnumCodeReturn.COMMAND_NOT_FOUND;
+            }
+            catch (Exception)
+            {
+                return (int)EnumCodeReturn.INTERNAL_ERROR;
+            }
         }
     }
 }
