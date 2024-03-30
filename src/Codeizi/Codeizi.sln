@@ -26,6 +26,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.CLI.Test", "..\..\t
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codeizi.Service.Test", "..\..\test\Codeizi.Service.Test\Codeizi.Service.Test.csproj", "{F81C8636-FE8A-4796-A403-659DD1DAC169}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codeizi.ConsoleManager.Test", "..\..\test\Codeizi.ConsoleManager.Test\Codeizi.ConsoleManager.Test.csproj", "{F3308C74-A55A-4F69-BA9D-C546EC761EFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F81C8636-FE8A-4796-A403-659DD1DAC169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3308C74-A55A-4F69-BA9D-C546EC761EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3308C74-A55A-4F69-BA9D-C546EC761EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3308C74-A55A-4F69-BA9D-C546EC761EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3308C74-A55A-4F69-BA9D-C546EC761EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +78,7 @@ Global
 		{38479AC9-E490-461C-9A11-3FCA47457DEF} = {BD1D337A-7668-4850-923C-DADC75112BFD}
 		{59237921-6E20-42D2-8749-EA2F59B0F60C} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 		{F81C8636-FE8A-4796-A403-659DD1DAC169} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
+		{F3308C74-A55A-4F69-BA9D-C546EC761EFD} = {B0ED9034-090C-4C79-BB08-ECB2CC45E113}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6963E20A-C1DC-49F1-9EBA-79D18758B813}

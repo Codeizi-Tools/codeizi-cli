@@ -2,27 +2,27 @@
 {
     public class ContentHelper
     {
-        private readonly List<KeyValuePair<string, ConsoleColor>> _content;
+        public readonly List<KeyValuePair<string, ConsoleColor>> Content;
         public ContentHelper()
         {
-            _content = [];
+            Content = [];
         }
 
         public ContentHelper AddToken(string token)
         {
-            _content.Add(new KeyValuePair<string, ConsoleColor>(token, ConsoleColor.White));
+            Content.Add(new KeyValuePair<string, ConsoleColor>(token, ConsoleColor.White));
             return this;
         }
 
         public ContentHelper AddToken(string token, ConsoleColor color)
         {
-            _content.Add(new KeyValuePair<string, ConsoleColor>(token, color));
+            Content.Add(new KeyValuePair<string, ConsoleColor>(token, color));
             return this;
         }
 
         public ContentHelper AddDefaultSpaces()
         {
-            _content.Add(new KeyValuePair<string, ConsoleColor>("    ", ConsoleColor.White));
+            Content.Add(new KeyValuePair<string, ConsoleColor>("    ", ConsoleColor.White));
             return this;
         }
     }
